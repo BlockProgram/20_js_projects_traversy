@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  background-image: linear-gradient(0deg, #7de8ed 40%, #54cc87 60%);
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+}
+
+button {
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 15px;
+}
+
+select {
+  appearance: none;
+  background-color: #a7c5e3;
+  border-radius: 0;
+  padding: 5px;
+  width: 200px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select:focus,
+button:focus {
+  outline: 0;
+}
+
+.settings-btn {
+  bottom: 30px;
+  left: 30px;
+  position: absolute;
+}
+
+.settings {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+.settings.hide {
+  transform: translateY(-100%);
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  width: 500px;
+}
+
+h2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  padding: 8px;
+  margin: 0 0 40px;
+}
+
+h1 {
+  margin: 0;
+}
+
+input {
+  border: 0;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 12px 20px;
+  margin-top: 10px;
+  width: 300px;
+}
+
+.score-container {
+  right: 20px;
+  position: absolute;
+  top: 60px;
+}
+
+.time-container {
+  left: 20px;
+  position: absolute;
+  top: 60px;
+}
+
+.end-game-container {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 1);
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
